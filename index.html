@@ -5,23 +5,90 @@
     <title>Fork Me! FCC: Test Suite Template</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&family=Poppins:wght@400;600;900&display=swap" rel="stylesheet">
   </head>
 
   <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <main>
+      <div class="container">
+        <h1 class="head" id="title">freeCodeCamp Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve the platform</p>
+        <form id="survey-form">
+          <label id="name-label" for="name">Name</label>
+          <input type="text" name="Name" id="name" placeholder='Enter your name' required>
+          <label id="email-label" for="email">Email</label>
+          <input type="email" name="email" id="email" placeholder='Enter your email' required>
+          <label id="number-label" for="age">Age (optional)</label>
+          <input type="number" name="age" placeholder='age' id="number" min="10" max="99" >
+          <label for="drop">Which option best describes your current role?</label>
+          <select id="dropdown">
+            <option disabled selected value>Select current role</option>
+            <option value="Student">Student</option>
+            <option value="Full Time Job">Full Time Learner</option>
+            <option value="">Full Time Learner</option>
+            <option value="">Prefer not to say</option>
+            <option value="">Other</option>
+          </select>
+          <p class='pr' >Would you recommend freeCodeCamp to a friend?</p>
+          <label class="ra" for=""><input value="ss" type="radio" name="user-recommend" id="Definitely">Definitely</label>
+          <label class="ra" for=""><input value="ssd" type="radio" name="user-recommend" id="Maybe">Maybe</label>
+          <label class="ra" for=""><input value="not-sure" type="radio" name="user-recommend" id="Not sure" class="input-radio">Not sure</label>
 
-    <!--
-
-    Hello Camper!
-
-    For now, the test suite only works in Chrome!
-    Please read the README below in the JS Editor before beginning.
-    Feel free to delete this message once you have read it.
-    Good luck and Happy Coding!
-
-    - The freeCodeCamp Team
-
-    -->
+          <p class="pr">What would you like to see improved? (Check all that apply)</p>
+          <label class="la" for="">
+            <input type="checkbox" value="sds" name="" id="">
+            <p>Front-end Projects</p>
+          </label>
+          <label class="la" for="">
+            <input type="checkbox" value="sds" name="" id="">
+            <p>Back-end Projects</p>
+          </label>
+          <label class="la" for="">
+            <input type="checkbox" value="sds" name="" id="">
+            <p>Data Visualization</p>
+          </label>
+          <label class="la" for="">
+            <input type="checkbox" value="sds" name="" id="">
+            <p>Challenges</p>
+          </label>
+          <label class="la" for="">
+            <input type="checkbox" value="sds" name="" id="">
+            <p>Open Source Community</p>
+          </label>
+          <label class="la" for="">
+            <input type="checkbox" value="sds" name="" id="">
+            <p>Gitter help rooms</p>
+          </label>
+          <label class="la" for="">
+            <input type="checkbox" value="sds" name="" id="">
+            <p>Videos</p>
+          </label>
+          <label class="la" for="">
+            <input  type="checkbox" value="sds" name="" id="">
+            <p>City Meetups</p>
+          </label>
+          <label class="la" for="">
+            <input type="checkbox" value="sds" name="" id="">
+            <p>Wiki</p>
+          </label>
+          <label class="la" for="">
+            <input type="checkbox" value="sds" name="" id="">
+            <p>Forum</p>
+          </label>
+          <label class="la" for="">
+            <input type="checkbox" value="sds" name="" id="">
+            <p>Additional Courses</p>
+          </label>
+          <p class="te">Any comments or suggestions?</p>
+          <textarea style="margin-top: 0px; margin-bottom: 0px; height: 125px;" placeholder="Enter your comment here..." name="" id="" cols="30" rows="10"></textarea>
+          <button  id="submit" type="submit">Submit</button>
+        </form>
+      </div>
+    </main>
+    
     <script  src="js/index.js"></script>
   </body>
 </html>
